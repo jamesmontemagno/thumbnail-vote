@@ -29,8 +29,18 @@ function link(label, href, className) {
   return node;
 }
 
+// Fisher–Yates shuffle so no design benefits from always appearing first.
+function shuffled(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
 function renderCards() {
-  for (const [index, thumbnail] of config.thumbnails.entries()) {
+  for (const [index, thumbnail] of shuffled(config.thumbnails).entries()) {
     const card = element("article", "card");
     const headingID = `thumbnail-${thumbnail.issue}`;
     card.setAttribute("aria-labelledby", headingID);
@@ -49,7 +59,7 @@ function renderCards() {
     const content = element("div", "card-content");
     const heading = element("div", "card-heading");
     const titleGroup = element("div");
-    titleGroup.append(element("span", "card-number", `DESIGN ${String(index + 1).padStart(2, "0")}`));
+    titleGroup.append(element("span", "card-number", `DESIGN ${String(thumbnail.issue).padStart(2, "0")}`));
     const title = element("h2", undefined, thumbnail.title);
     title.id = headingID;
     titleGroup.append(title);

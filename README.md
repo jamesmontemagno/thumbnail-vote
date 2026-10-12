@@ -11,6 +11,7 @@ Each thumbnail has a GitHub issue labeled `thumbnail-vote`. The gallery's **Vote
 - One thumbs-up per account per design, enforced by GitHub.
 - You can support multiple designs. Totals are approvals, not unique voters.
 - Remove your reaction to withdraw a vote.
+- Cards are shuffled on every page load so no design gets a placement advantage. Design numbers match issue numbers.
 - Comments and other reaction types do not count.
 - Feedback comments are welcome. They trigger a rebuild but are not votes.
 
