@@ -11,12 +11,15 @@ const issues = config.thumbnails.map((thumbnail, index) => ({
   reactions: { "+1": index, "-1": 7, heart: 100, total_count: index + 107 },
 }));
 
+const n = config.thumbnails.length;
+const expectedTotal = (n * (n - 1)) / 2;
+
 test("counts only thumbs-up on configured issues, including closed issues", () => {
   const snapshot = countIssueVotes([...issues, { number: 99, reactions: { "+1": 500 } }], config, now);
-  assert.deepEqual(snapshot.counts.map(record => record.votes), [0, 1, 2, 3, 4, 5]);
+  assert.deepEqual(snapshot.counts.map(record => record.votes), [...Array(n).keys()]);
   assert.equal(snapshot.updatedAt, now);
-  assert.equal(summarizeVotes(snapshot).total, 15);
-  assert.deepEqual(summarizeVotes(snapshot).leaders, [6]);
+  assert.equal(summarizeVotes(snapshot).total, expectedTotal);
+  assert.deepEqual(summarizeVotes(snapshot).leaders, [config.thumbnails.at(-1).issue]);
 });
 
 test("missing issues, missing counts, negative and nonnumeric votes fail explicitly", () => {
@@ -47,7 +50,7 @@ test("withdrawing a thumbs-up reduces the total", () => {
   const after = countIssueVotes(issues.map(issue => ({
     ...issue, reactions: { "+1": Math.max(0, issue.reactions["+1"] - 1) },
   })), config, now);
-  assert.equal(summarizeVotes(before).total - summarizeVotes(after).total, 5);
+  assert.equal(summarizeVotes(before).total - summarizeVotes(after).total, n - 1);
 });
 
 test("configuration rejects duplicate issues, unsafe slugs, and empty descriptions", () => {
@@ -79,7 +82,7 @@ test("GitHub API requests use labeled issues and public browsing does not send a
       return new Response(JSON.stringify(issues));
     },
   });
-  assert.equal(summarizeVotes(snapshot).total, 15);
+  assert.equal(summarizeVotes(snapshot).total, expectedTotal);
 });
 
 test("pagination fetches later voting issues and authenticates workflow requests", async () => {
@@ -99,7 +102,7 @@ test("pagination fetches later voting issues and authenticates workflow requests
     },
   });
   assert.equal(calls, 2);
-  assert.equal(summarizeVotes(snapshot).total, 15);
+  assert.equal(summarizeVotes(snapshot).total, expectedTotal);
 });
 
 test("pagination cannot forward tokens to another origin", async () => {

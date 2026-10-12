@@ -42,6 +42,27 @@
       "title": "First Steps, Refined",
       "description": "A restrained dark-green direction: First Steps with the GitHub Copilot app, with an invitation to follow along.",
       "alt": "First Steps GitHub Copilot app in white and mint lettering with a follow-along label and app screenshot"
+    },
+    {
+      "issue": 7,
+      "slug": "07-zero-to-shipped",
+      "title": "Zero to Shipped",
+      "description": "Loud and punchy: yellow sunburst, giant ZERO TO SHIPPED type, and a red SHIPPED! stamp on the finished space quiz.",
+      "alt": "Zero to Shipped in huge black and white Impact lettering on yellow, beside the space quiz with a red Shipped stamp"
+    },
+    {
+      "issue": 8,
+      "slug": "08-copilot-built-this",
+      "title": "Copilot Built This",
+      "description": "Classic YouTube hook: COPILOT BUILT THIS with a big red arrow and marker circle pointing at the app Copilot created.",
+      "alt": "Copilot Built This in bold white and red lettering with a red arrow and circle highlighting the quiz in the Copilot app"
+    },
+    {
+      "issue": 9,
+      "slug": "09-copilot-app-101",
+      "title": "Copilot App 101",
+      "description": "Course-cover energy: a giant glowing yellow 101 on electric blue with a 'complete beginner workshop' banner.",
+      "alt": "GitHub Copilot App 101 in giant glowing yellow numerals on a blue sunburst with a white Complete Beginner Workshop banner"
     }
   ]
 }

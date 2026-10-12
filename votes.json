@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T04:26:29.826Z",
+  "updatedAt": "2026-10-12T04:32:51.866Z",
   "counts": [
     {
       "issue": 1,
@@ -23,6 +23,18 @@
     },
     {
       "issue": 6,
+      "votes": 0
+    },
+    {
+      "issue": 7,
+      "votes": 0
+    },
+    {
+      "issue": 8,
+      "votes": 0
+    },
+    {
+      "issue": 9,
       "votes": 0
     }
   ]
