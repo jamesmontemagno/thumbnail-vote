@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.DS_Store
+__pycache__/
+
+# Local video extracts and the machine-specific image generation script.
+assets/
+generate.py

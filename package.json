@@ -1,0 +1,14 @@
+{
+  "name": "thumbnail-vote",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "update-votes": "node scripts/update-votes.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

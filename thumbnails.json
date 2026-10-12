@@ -1,0 +1,47 @@
+{
+  "repository": "jamesmontemagno/thumbnail-vote",
+  "thumbnails": [
+    {
+      "issue": 1,
+      "slug": "01-start-here",
+      "title": "Start Here",
+      "description": "A beginner-focused direction with a short headline, mint-green accents, and a real Copilot app session.",
+      "alt": "Start Here in large white and mint lettering beside the GitHub Copilot app building a space quiz"
+    },
+    {
+      "issue": 2,
+      "slug": "02-build-your-first-app",
+      "title": "Build Your First App",
+      "description": "An outcome-focused direction: create your first app step by step, with the workshop's space quiz front and center.",
+      "alt": "Build Your First App in large white and purple lettering beside the finished space quiz"
+    },
+    {
+      "issue": 3,
+      "slug": "03-full-workshop",
+      "title": "Full Workshop",
+      "description": "A product-focused direction with bold lime lettering and a clear promise: build, test, and ship in a full workshop.",
+      "alt": "GitHub Copilot App Full Workshop in white and lime lettering above an actual app screenshot"
+    },
+    {
+      "issue": 4,
+      "slug": "04-prompt-to-project",
+      "title": "From Prompt to Project",
+      "description": "A warm, light direction connecting a simple prompt to a working space quiz. The prompt card illustrates the idea.",
+      "alt": "From Prompt to Project on a cream background with an arrow from a prompt card to the space quiz"
+    },
+    {
+      "issue": 5,
+      "slug": "05-learn-by-building",
+      "title": "Learn by Building",
+      "description": "A hands-on learning direction with blue accents and layered screenshots of the Copilot app and the project.",
+      "alt": "Learn by Building in white and blue lettering alongside layered app and space quiz screenshots"
+    },
+    {
+      "issue": 6,
+      "slug": "06-first-steps",
+      "title": "First Steps, Refined",
+      "description": "A restrained dark-green direction: First Steps with the GitHub Copilot app, with an invitation to follow along.",
+      "alt": "First Steps GitHub Copilot app in white and mint lettering with a follow-along label and app screenshot"
+    }
+  ]
+}

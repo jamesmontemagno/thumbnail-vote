@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help choose the YouTube thumbnail for a complete, follow-along GitHub Copilot app workshop. Compare six designs and vote with a GitHub thumbs-up.">
+  <meta name="theme-color" content="#101318">
+  <meta property="og:title" content="Pick the thumbnail — GitHub Copilot app workshop">
+  <meta property="og:description" content="Six thumbnails. One hands-on workshop. Compare the designs and vote for your favorites.">
+  <meta property="og:image" content="https://jamesmontemagno.github.io/thumbnail-vote/comparison.jpg">
+  <meta property="og:url" content="https://jamesmontemagno.github.io/thumbnail-vote/">
+  <title>Pick the thumbnail — GitHub Copilot app workshop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#thumbnails">Skip to thumbnails</a>
+  <header class="site-header">
+    <a class="wordmark" href="./"><span class="brand-dot"></span> thumbnail<span class="muted">/</span>vote</a>
+    <a href="https://github.com/jamesmontemagno/thumbnail-vote" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="status-dot"></span> HELP PICK THE COVER</div>
+      <h1 id="page-title">Six thumbnails.<br><span>Your call.</span></h1>
+      <p class="lede">I'm releasing a full, follow-along <strong>GitHub Copilot app workshop</strong>.
+        Which thumbnail would make you click? Compare the designs, then vote for your favorites.</p>
+      <div class="hero-links">
+        <a class="button primary" href="#thumbnails">Compare &amp; vote <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://jamesmontemagno.github.io/first-steps-with-github-copilot/" target="_blank" rel="noopener noreferrer">Explore the workshop <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="how-to" aria-labelledby="how-title">
+      <div class="how-label"><span aria-hidden="true">👍</span><h2 id="how-title">How voting works</h2></div>
+      <p>Choose <strong>Vote on GitHub</strong>, then add a <strong>👍 reaction to the issue's opening post</strong> using its smiley-face button.
+        A GitHub account is required. Support multiple designs if you like; remove a reaction to withdraw your vote.
+        Comments and other reactions don't count.</p>
+    </section>
+    <section class="results-bar" aria-label="Vote totals and gallery controls">
+      <div>
+        <p id="total-votes" class="total-votes">Loading votes…</p>
+        <p id="vote-status" class="vote-status" role="status" aria-live="polite">Loading the last published results.</p>
+      </div>
+      <div class="controls">
+        <button id="feed-toggle" class="button secondary" type="button" aria-pressed="false">Small-feed preview</button>
+        <button id="refresh-votes" class="button secondary" type="button" disabled>Refresh votes</button>
+      </div>
+    </section>
+    <p id="vote-error" class="notice" role="alert" hidden></p>
+    <section id="thumbnails" class="grid" aria-label="Thumbnail designs"></section>
+    <noscript>
+      <section class="notice">
+        <p>Enable JavaScript to see thumbnail cards and vote counts, or <a href="comparison.jpg">compare all six designs here</a>.</p>
+        <p>Vote with a 👍 on the opening post:
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/1">01 — Start Here</a> ·
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/2">02 — Build Your First App</a> ·
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/3">03 — Full Workshop</a> ·
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/4">04 — From Prompt to Project</a> ·
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/5">05 — Learn by Building</a> ·
+          <a href="https://github.com/jamesmontemagno/thumbnail-vote/issues/6">06 — First Steps, Refined</a>.
+        </p>
+      </section>
+    </noscript>
+    <div class="comparison-link"><a href="comparison.jpg" target="_blank" rel="noopener noreferrer">Open the side-by-side comparison <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer>
+    <p>Made by <a href="https://youtube.com/jamesmontemagno" target="_blank" rel="noopener noreferrer">James Montemagno</a> · Real workshop screenshots. Six different directions.</p>
+    <p>GitHub is the source of truth. Results refresh on page load and the site republishes hourly.<br>
+      Total votes are approvals across thumbnails, not a count of unique voters.</p>
+  </footer>
+</body>
+</html>
