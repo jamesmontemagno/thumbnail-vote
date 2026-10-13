@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T04:32:51.866Z",
+  "updatedAt": "2026-10-13T03:43:03.447Z",
   "counts": [
     {
       "issue": 1,
@@ -7,19 +7,19 @@
     },
     {
       "issue": 2,
-      "votes": 0
+      "votes": 4
     },
     {
       "issue": 3,
-      "votes": 0
+      "votes": 5
     },
     {
       "issue": 4,
-      "votes": 0
+      "votes": 1
     },
     {
       "issue": 5,
-      "votes": 0
+      "votes": 1
     },
     {
       "issue": 6,
@@ -27,7 +27,7 @@
     },
     {
       "issue": 7,
-      "votes": 0
+      "votes": 1
     },
     {
       "issue": 8,
@@ -35,6 +35,14 @@
     },
     {
       "issue": 9,
+      "votes": 1
+    },
+    {
+      "issue": 10,
+      "votes": 0
+    },
+    {
+      "issue": 11,
       "votes": 0
     }
   ]

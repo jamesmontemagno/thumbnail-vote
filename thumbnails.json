@@ -63,6 +63,20 @@
       "title": "Copilot App 101",
       "description": "Course-cover energy: a giant glowing yellow 101 on electric blue with a 'complete beginner workshop' banner.",
       "alt": "GitHub Copilot App 101 in giant glowing yellow numerals on a blue sunburst with a white Complete Beginner Workshop banner"
+    },
+    {
+      "issue": 10,
+      "slug": "10-first-app-liftoff",
+      "title": "First App Liftoff",
+      "description": "A wild remix of 02: the same Build Your First App headline in synthwave space, with a rocket launching out of the quiz.",
+      "alt": "Build Your First App in white and sunset-gradient lettering on a neon synthwave grid, with a rocket launching from the space quiz"
+    },
+    {
+      "issue": 11,
+      "slug": "11-full-workshop-glitch",
+      "title": "Full Workshop Glitch",
+      "description": "A wild remix of 03: glitchy COPILOT APP type, a lime FULL WORKSHOP label, and BUILD ✔ TEST ✔ SHIP ✔ caution tape.",
+      "alt": "Copilot App in glitchy white lettering above a lime Full Workshop label, a tilted app screenshot, and Build Test Ship caution tape"
     }
   ]
 }
